@@ -1,6 +1,8 @@
+import utils
+
+
 def main() -> int:
-    with open("input.txt", "r", encoding="ascii") as f_o:
-        lines = f_o.readlines()
+    lines = utils.get_lines()
 
     most_calories = current_calories = 0
     for line in lines:
